@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-starter",
+  "version": "1.0.0",
+  "description": "My classy Nuxt.js project",
+  "author": "VincentPFG",
+  "private": true,
+  "scripts": {
+    "nuxt:dev": "nuxt",
+    "nuxt:generate": "nuxt generate",
+    "coffee:functions": "coffee -o ./functions/js -wc ./functions/coffee",
+    "npm:update": "sudo npm i -g npm; sudo npm i -g @gridsome/cli; sudo npm i -g netlify-cli; npm update"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.4.1",
+    "nuxt": "^2.0.0",
+    "nuxt-coffeescript-module": "^2.1.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
