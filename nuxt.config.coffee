@@ -30,6 +30,7 @@ export default
         '@nuxtjs/axios'
         'nuxt-coffeescript-module'
         '@nuxtjs/apollo'
+        '@nuxtjs/localtunnel'
     ]
     axios: {}
     vuetify:
