@@ -29,6 +29,7 @@ export default
     modules: [
         '@nuxtjs/axios'
         'nuxt-coffeescript-module'
+        '@nuxtjs/apollo'
     ]
     axios: {}
     vuetify:
@@ -37,12 +38,16 @@ export default
         ]
         theme:
             dark: yes
-            themes: dark:
-                primary: colors.blue.darken2
-                accent: colors.grey.darken3
-                secondary: colors.amber.darken3
-                info: colors.teal.lighten1
-                warning: colors.amber.base
-                error: colors.deepOrange.accent4
-                success: colors.green.accent3
+            # themes: dark:
+            #     primary: colors.blue.darken2
+            #     accent: colors.grey.darken3
+            #     secondary: colors.amber.darken3
+            #     info: colors.teal.lighten1
+            #     warning: colors.amber.base
+            #     error: colors.deepOrange.accent4
+            #     success: colors.green.accent3
     build: extend: (config, ctx) ->
+    apollo:
+        clientConfigs:
+            default:
+                httpEndpoint: ''
