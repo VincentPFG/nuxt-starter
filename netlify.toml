@@ -2,3 +2,7 @@
 command = 'nuxt generate'
 publish = 'dist'
 functions = 'functions/js'
+
+[[redirects]]
+from = '/f/*'
+to = '/.netlify/functions/:splat'
